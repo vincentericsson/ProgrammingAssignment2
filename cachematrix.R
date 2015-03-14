@@ -2,7 +2,6 @@
 ## the complementary function to retrieve/set the inverse of this matrix.
 
 ## Creates an instance of a matrix with the ability to cache its inverse.
-
 makeCacheMatrix <- function(x = matrix()) {
   inv<-NULL
   # Change the matrix.
@@ -20,9 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
   list(set=set,get=get,setinv=setinv,getinv=getinv)
 }
 
-
 ## Function returning the inverse of matrix x, returns the cached inverse if such exists.
-
 cacheSolve <- function(x, ...) {
   inv<-x$getinv()
   # Return cached data if such exists.
